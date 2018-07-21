@@ -54,6 +54,10 @@ return [
             'driver' => 'null',
         ],
 
+        'zmq' => [
+            'driver' => 'zmq',
+        ],
+
     ],
 
 ];

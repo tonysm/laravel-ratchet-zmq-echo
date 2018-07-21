@@ -2,8 +2,8 @@
 
 namespace App\Console\Commands;
 
-use App\Events\NewMessage;
 use Faker\Factory;
+use App\Events\NewMessage;
 use Illuminate\Console\Command;
 
 class SendMessages extends Command
