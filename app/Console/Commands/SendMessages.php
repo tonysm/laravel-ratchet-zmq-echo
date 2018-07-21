@@ -31,11 +31,14 @@ class SendMessages extends Command
     {
         $faker = Factory::create();
         $amount = $this->option('amount');
+        $this->info(sprintf('Sending %d messages', $amount));
 
         foreach (range(1, $amount) as $i) {
             broadcast(new NewMessage(
                 $faker->sentence()
             ));
         }
+
+        $this->info('Done!');
     }
 }
