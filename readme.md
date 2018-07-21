@@ -39,6 +39,7 @@ Copy the `.env.example` to `.env` and change this line:
 Create the Sqlite database and migrate:
 
 ```bash
+php artisan key:generate
 touch database/database.sqlite
 php artisan migrate
 ```
